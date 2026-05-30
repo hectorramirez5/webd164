@@ -11,7 +11,7 @@
     	<link rel="stylesheet" href="style.css">
     	<title>Library</title>
 	</head>
-	<body class="bg-sky-100 dark:bg-black">
+	<body class="bg-blue-200 dark:bg-black">
 		
 		<header class="fixed top-0 right-0 left-0 z-50 relative">
       		<div class="container mx-auto p-5 flex">
@@ -29,11 +29,14 @@
             		</div>
 
             		<ul class="hidden md:flex text-md md:text-base">
-              			<li class="mr-6">
-                			<a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl" href="index.html">Home</a>
-                			<a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl" href="library.html">Library</a>
-                			<a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl" href="settings.html">Settings</a>
-              			</li>
+              			<li class="mr-2">
+                			<a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl p-0.5" href="index.html">Home</a></li>
+                		<li class="mr-2">
+                  			<a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl p-0.5" href="library.html">Library</a>
+                		</li>
+                		<li class="mr-2">
+                  			<a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl p-0.5" href="settings.html">Settings</a>
+                		</li>
             		</ul>
           	</header>
           </header>
@@ -41,11 +44,18 @@
 		<section>
 			<div class="text-center">
 				<h1 class="text-5xl font-semibold leading-none dark:text-white">Library</h1>
-				<h2 class="text-4xl leading-none dark:text-white">Feed List</h2>
-				<ul><li class="m-3 mb-4 leading-none dark:text-white">Feed 1</li></ul>
-				<ul><li class="m-3 mb-4 leading-none dark:text-white">Feed 2</li></ul>
+				<h2 class="text-4xl leading-none dark:text-white">Feed</h2>
+				<div id="feed-ctn" ></div>
 			</div>
+
 		</section>
+
+
+<div id="scroll-text">
+    <div class="section">
+        <div id="scroll-container"></div>
+    </div>
+</div>
 
 	</div>
 

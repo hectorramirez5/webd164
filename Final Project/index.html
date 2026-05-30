@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Hector Ramirez, This a website displaying an RSS feed with a few themes to choose from in the settings page -->
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8">
@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Seeker RSS</title>
   </head>
-  <body class="bg-sky-100 dark:bg-black">
+  <body class="bg-blue-200 dark:bg-black">
 
     <header class="fixed top-0 right-0 left-0 z-50 relative">
       <div class="container mx-auto p-5 flex">
           <header class="fixed top-0 right-0 left-0 z-50 relative">
 
+            <!--Mobile Menu -->
             <button id="menu-toggle" class="block md:hidden dark:text-white focus:outline-none"
             aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
             ☰
@@ -28,12 +29,16 @@
               <a href="settings.html" class="block bg-blue-300 dark:text-white rounded-sm shadow-xl">Settings</a>
             </div>
 
+            <!-- Desktop Menu -->
             <ul class="hidden md:flex text-md md:text-base">
-              <li class="mr-6">
-                <a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl" href="index.html">Home</a>
-                <a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl" href="library.html">Library</a>
-                <a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl" href="settings.html">Settings</a>
-              </li>
+              <li class="mr-2">
+                <a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl p-0.5" href="index.html">Home</a></li>
+                <li class="mr-2">
+                  <a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl p-0.5" href="library.html">Library</a>
+                </li>
+                <li class="mr-2">
+                  <a class="text-black bg-blue-300 dark:text-white rounded-sm shadow-xl p-0.5" href="settings.html">Settings</a>
+                </li>
             </ul>
           </header>
     </header>
@@ -43,8 +48,8 @@
               <h1 class="text-5xl font-semibold dark:text-white">Home</h1>
               <p class="m-3 mb-4 leading-none dark:text-white">Welcome to Seeker RSS!</p>
               <p class="m-3 mb-4 leading-none dark:text-white">This is an RSS reader app designed to put the user first. The app is divided into 3 pages: Home, Library and Settings.</p>
-              <p class="m-3 mb-4 leading-none dark:text-white">Starting adding rss feeds now!</p>
-              <p class="animate-bounce dark:text-white">-> <button class="border rounded-full bg-sky-300"><a href="library.html"> Start here</a></button></p>
+              <p class="m-3 mb-4 leading-none dark:text-white">Start using the website now!</p>
+              <p class="animate-bounce dark:text-white">-> <button class="border rounded-full bg-sky-300 p-0.5"><a href="library.html"> Start here</a></button></p>
             </div>
         </section>
       </div>

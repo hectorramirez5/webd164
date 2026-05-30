@@ -1,7 +1,34 @@
-@import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
+
 
 body {
 	font-family: 'Audiowide', sans-serif;
+
+}
+
+.mr-2:hover {
+	animation: pulse 0.5s ease-in;
+}
+
+@keyframes pulse{
+	25% {transform: scale(0.9);}
+	75% {transform: scale(1.1);}
+}
+
+.dark-mode {
+	background-color: #222831;
+	color: white;
+}
+
+.darkmode {
+	background-color: black;
+}
+
+.blue-mode {
+	background-color: #0084d1;
+	color: white;
+}
+
+.feed-itm {
+	color: white;
 }
